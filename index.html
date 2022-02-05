@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
+<!-- icons -->
+<script src="https://kit.fontawesome.com/8eb6a3289b.js" crossorigin="anonymous"></script>
+</head>
+
+  <body>
+  <div class="wrapper">
+    <header>
+      <i class="fas fa-arrow-circle-left 3x"></i>
+       Weather App
+    </header>
+    <!-- textfields -->
+    <section class="input-part">
+      <p class="info-txt"> Please enter a valid city name</p>
+      <input type="text" placeholder="Enter city name" spellcheck="false" required>
+      <div class="seperator"></div>
+       <button>Get Device Location</button>
+    </section>
+
+  <!-- result page -->
+     <section class="weather-part">
+       <img src="#" alt="Weather icon">
+       <div class="temp">
+         <span class="numb">_</span>
+         <span class="deg">°</span>C
+       </div>
+       <div class="weather">_ _</div>
+       <div class="location">
+         <i class="fas fa-map-marker-alt"></i>
+         <span>_, _</span>
+       </div>
+       <!-- weather data -->
+       <div class="bottom-details">
+        <!-- temp and description -->
+         <div class="column feels">
+           <i class="fas fa-temperature-low 2x"></i>
+           <div class="details">
+
+             <div class="temp">
+               <!-- temp value -->
+               <span class="numb-2">_</span>
+               <span class="deg">°</span>
+             </div>
+             <p>Feels like</p>
+           </div>
+         </div>
+         <!-- humidity -->
+         <div class="column humidity">
+           <i class="fas fa-tint 2x"></i>
+           <div class="details">
+               <span>_</span>
+             <p>Humidity</p>
+           </div>
+         </div>
+
+       </div>
+     </section>
+  </div>
+
+<!-- js -->
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
